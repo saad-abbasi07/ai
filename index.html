@@ -1,0 +1,1321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AiViqo - AI Automation Agency</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="chatbot/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <section id="loading">
+    <div id="lodingmain-1" class="loadingmain"></div>
+    <div id="lodingmain-2" class="loadingmain"></div>
+    <div id="lodingmain-3" class="loadingmain">
+      <img src="assets/images/AiViqo Logo.svg" alt="">
+    </div>
+    <div id="lodingmain-4" class="loadingmain"></div>
+    <div id="lodingmain-5" class="loadingmain"></div>
+  </section>
+  <section id="header">
+    <div id="header-left">
+      <div id="hl-1">
+        <img src="assets/images/AiViqo Logo.svg" alt="AiViqo" />
+      </div>
+      <div id="hl-2">
+        <img src="assets/icons/menu-line.svg" alt="" />
+      </div>
+    </div>
+    <div id="header-right">
+      <a id="hr-main-anchor" href="mailto:info@aiviqo.com">
+        <div id="hr-main">
+        <button></button>
+        <h1>Contact Us</h1>
+        <h2>>>></h2>
+      </div>
+      </a>
+    </div>
+  </section>
+   <section id="hero-section" class="reveal">
+     <div id="hero-l">
+      <div id="hero-1">
+        <h1>
+          <span id="hl-text1">Empower</span>
+          <span id="hl-text2">Modern</span>
+          <span id="hl-text3">Business*</span>
+        </h1>
+      </div>
+      <div id="hero-2">
+        <h3>*Smart automation and modern web systems to <span>streamline operations,</span><br> 
+            support your<span> staff,</span> serve your <span>customers better,</span> protect your <span>resources</span><br>
+            and grow <span>your business with confidence.</span></h3>
+      </div>
+      <div id="hero-3">
+       <a href="mailto:info@aiviqo.com">
+         <button>
+          <div id="arrow-btn">
+            <i class="fa-solid fa-arrow-right"></i>
+          </div>
+          <h1>Start your quote  </h1>
+        </button>
+        </a>
+      </div>
+      <div id="hero-4">
+        <div>
+         <a href="mailto:info@aiviqo.com">
+           <button id="schedule-call">Schedule a call <span></span></button>
+         </a>
+          <a href="">
+           <button id="book-demo" onclick="openChatAndRequestDemo()">Book a demo  <i class="fa-solid fa-arrow-right"></i></button>
+         </a>
+        </div>
+      </div>
+     </div>
+     <div id="hero-r">
+       <div id="team-profile">
+         <h1>Professional team.</h1>
+         <div id="profile-image">
+           <img class="profile-pictures" src="assets/images/profile_3.jpg" alt="picture">
+        <img class="profile-pictures" src="assets/images/profile_2.jpg" alt="picture">
+        <img class="profile-pictures" src="assets/images/profile_1.jpg" alt="picture">
+         </div>
+         <button id="plus">
+           +
+         </button>
+       </div>
+       <div id="scroll">
+         <h1>scroll</h1>
+         <div id="scroll-icon">
+           <i class="fa-solid fa-arrow-down-long"></i>
+         </div>
+       </div>
+     </div>
+   </section>
+   <div id="herogap"></div>
+   
+   <!-- reviews hero -->
+  <section id="reviews-section" class="reveal">
+    <div id="rs-left">
+      <div id="rsl-1">
+        <h1>Ai Based Results</h1>
+        <a href="">insights</a>
+      </div>
+      <div id="reviews-carousel">
+        <div class="reviews-container" id="reviews-container">
+          <div class="review-item">
+            <div class="review-content">
+              <img src="assets/images/profile_1.jpg" alt="Alan">
+              <div class="review-text">
+                <h3>Alan Said</h3>
+                <p>"Creative strategies that actually drive results."</p>
+              </div>
+              <button class="voice-btn" onclick="speakReview('Alan Said', 'Creative strategies that actually drive results.')" aria-label="Listen to Alan's review">
+                <i class="fas fa-volume-up"></i>
+              </button>
+            </div>
+          </div>
+          <div class="review-item">
+            <div class="review-content">
+              <img src="assets/images/profile_2.jpg" alt="Sarah">
+              <div class="review-text">
+                <h3>Sarah Khan</h3>
+                <p>"Amazing AI automation that saved us hours of work daily."</p>
+              </div>
+              <button class="voice-btn" onclick="speakReview('Sarah Khan', 'Amazing AI automation that saved us hours of work daily.')" aria-label="Listen to Sarah's review">
+                <i class="fas fa-volume-up"></i>
+              </button>
+            </div>
+          </div>
+          <div class="review-item">
+            <div class="review-content">
+              <img src="assets/images/profile_3.jpg" alt="Bilal">
+              <div class="review-text">
+                <h3>Bilal Ahmed</h3>
+                <p>"The chatbot integration was seamless and highly effective."</p>
+              </div>
+              <button class="voice-btn" onclick="speakReview('Bilal Ahmed', 'The chatbot integration was seamless and highly effective.')" aria-label="Listen to Bilal's review">
+                <i class="fas fa-volume-up"></i>
+              </button>
+            </div>
+          </div>
+          <div class="review-item">
+            <div class="review-content">
+              <img src="assets/images/profile_1.jpg" alt="Ayesha">
+              <div class="review-text">
+                <h3>Ayesha Noor</h3>
+                <p>"Outstanding workflow automation that transformed our operations."</p>
+              </div>
+              <button class="voice-btn" onclick="speakReview('Ayesha Noor', 'Outstanding workflow automation that transformed our operations.')" aria-label="Listen to Ayesha's review">
+                <i class="fas fa-volume-up"></i>
+              </button>
+            </div>
+          </div>
+          <div class="review-item">
+            <div class="review-content">
+              <img src="assets/images/profile_2.jpg" alt="Michael">
+              <div class="review-text">
+                <h3>Michael Chen</h3>
+                <p>"The AI solutions provided by AiViqo have been a game-changer for our business."</p>
+              </div>
+              <button class="voice-btn" onclick="speakReview('Michael Chen', 'The AI solutions provided by AiViqo have been a game-changer for our business.')" aria-label="Listen to Michael's review">
+                <i class="fas fa-volume-up"></i>
+              </button>
+            </div>
+          </div>
+          <div class="review-item">
+            <div class="review-content">
+              <img src="assets/images/profile_3.jpg" alt="Sophia">
+              <div class="review-text">
+                <h3>Sophia Williams</h3>
+                <p>"Exceptional service and innovative AI solutions that delivered real results."</p>
+              </div>
+              <button class="voice-btn" onclick="speakReview('Sophia Williams', 'Exceptional service and innovative AI solutions that delivered real results.')" aria-label="Listen to Sophia's review">
+                <i class="fas fa-volume-up"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-navigation">
+          <button class="carousel-btn prev" onclick="changeReview(-1)" aria-label="Previous">‹</button>
+          <div class="carousel-dots" id="carousel-dots">
+            <!-- Dots will be added by JavaScript -->
+          </div>
+          <button class="carousel-btn next" onclick="changeReview(1)" aria-label="Next">›</button>
+        </div>
+      </div>
+    </div>
+    <div id="rs-right">
+      <div id="rsr-1">
+        <div id="rsr1-top">
+          <h1>Boosting user experience through AI-based</h1>
+        </div>
+        <div id="rsr1-bottom">
+          <div id="button-main">
+            <button class="icon-button"><img src="assets/icons/phone icon.svg" alt=""></button>
+            <button id="text-button" class="text-button">Brainstormed</button>
+            <button class="icon-button"><img src="assets/icons/scanner icon.svg" alt=""></button>
+          </div>
+          <div id="button-main">
+            <button id="text-button" class="text-button">Scanning</button>
+            <button class="icon-button"><img src="assets/icons/web icon.svg" alt=""></button>
+            <button id="text-button" class="text-button">Assembly</button>
+          </div>
+        </div>
+      </div>
+      <div id="rsr-2">
+        <img src="assets/images/cleint-shapimg.svg" alt="">
+      </div>
+    </div>
+   </section>
+  <!-- About CTA Hero (placed below reviews) -->
+  <section id="about-hero" class="reveal" aria-label="Get started with AiViqo">
+    <div class="about-hero-inner">
+      <div class="about-hero-text">
+        <h3>Ready to automate what matters?</h3>
+        <p>Deploy AI agents and workflows in weeks, not months. Start with a short discovery and tailored plan.</p>
+      </div>
+      <div class="about-hero-actions">
+        <a href="mailto:info@aiviqo.com" class="btn-primary">Get a proposal</a>
+        <a href="#portfolio" class="btn-outline">See case studies</a>
+      </div>
+    </div>
+  </section>
+  <!-- About (inserted here) -->
+    <section id="about" class="reveal">
+      <div class="section-head">
+        <h2>About Us</h2>
+        <p>Who we are and what we deliver</p>
+      </div>
+      <div class="about-wrap">
+        <div class="about-text">
+          <span class="eyebrow">How it started</span>
+          <h3 class="about-display">We design AI that works</h3>
+          <p>AiViqo is an AI automation agency that designs, builds, and operates voice agents, chatbots, and workflow automation for modern teams. We combine product thinking with reliable engineering to remove operational friction, improve customer experience, and unlock measurable growth.</p>
+          <p>From discovery to deployment, we ship quickly and iterate with data. Our solutions integrate with your stack and scale from pilot to production with clear ownership and SLAs.</p>
+          <ul class="about-points">
+          <li><i class="fa-solid fa-circle-check"></i> AI Voice & Chat Agents for sales, support, and scheduling</li>
+          <li><i class="fa-solid fa-circle-check"></i> End‑to‑end Workflow Automation across CRM, helpdesk, and ops tools</li>
+          <li><i class="fa-solid fa-circle-check"></i> WhatsApp, Instagram, and Web chatbots with smart routing</li>
+          <li><i class="fa-solid fa-circle-check"></i> Industry solutions for Healthcare, Real Estate, Logistics, and SaaS</li>
+          </ul>
+          <div class="about-badges">
+            <span class="badge">Fast delivery</span>
+            <span class="badge">Measurable ROI</span>
+            <span class="badge">Secure integrations</span>
+          </div>
+          <div class="about-quote">
+            <img src="assets/images/profile_2.jpg" alt="client" />
+            <p>“They shipped a working agent in weeks and iterated fast until it moved our KPIs.”</p>
+          </div>
+        </div>
+        <div class="about-cta">
+          <div class="about-media">
+            <img class="about-image" src="assets/images/hero-image.svg" alt="AiViqo team collaborating" />
+            <a href="#portfolio" class="about-play" aria-label="See our work"><i class="fa-solid fa-play"></i></a>
+          </div>
+          <div class="about-mini-stats">
+            <div class="stat-card">
+              <h4>3.5</h4>
+              <p>Years Experience</p>
+            </div>
+            <div class="stat-card">
+              <h4>23</h4>
+              <p>Project Challenge</p>
+            </div>
+            <div class="stat-card">
+              <h4>830+</h4>
+              <p>Positive Reviews</p>
+            </div>
+            <div class="stat-card">
+              <h4>100K</h4>
+              <p>Trusted Users</p>
+            </div>
+          </div>
+          <a href="mailto:info@aiviqo.com" class="about-button">Talk to our team</a>
+        </div>
+      </div>
+    <div class="about-stats">
+      <div class="stat">
+        <h3><span class="count" data-target="127">0</span>+</h3>
+        <p>Customers served</p>
+      </div>
+      <div class="stat">
+        <h3><span class="count" data-target="6">0</span><span class="suffix"> weeks</span></h3>
+        <p>From idea to launch</p>
+      </div>
+      <div class="stat">
+        <h3><span class="count" data-target="24">0</span>/<span class="count" data-target="7">0</span></h3>
+        <p>Automated availability</p>
+      </div>
+      <div class="stat">
+        <h3><span class="count" data-target="10">0</span>+</h3>
+        <p>Tool integrations</p>
+      </div>
+    </div>
+    <div class="about-cards">
+      <article class="about-card">
+        <div class="icon"><i class="fa-solid fa-robot"></i></div>
+        <h3>Voice & Chat Agents</h3>
+        <p>Natural agents that qualify leads, answer FAQs, and book meetings across channels.</p>
+      </article>
+      <article class="about-card">
+        <div class="icon"><i class="fa-solid fa-diagram-project"></i></div>
+        <h3>Workflow Automation</h3>
+        <p>Automate intake, routing, CRM updates, and notifications across your stack.</p>
+      </article>
+      <article class="about-card">
+        <div class="icon"><i class="fa-solid fa-plug"></i></div>
+        <h3>Integrations & Data</h3>
+        <p>Reliable integrations with CRMs, helpdesks, and data pipelines with clear SLAs.</p>
+      </article>
+    </div>
+  </section>
+   <!-- Services -->
+   <section id="services" class="reveal">
+     <div class="section-head">
+       <h2>Services</h2>
+       <p>End-to-end AI solutions tailored for growth-focused teams</p>
+     </div>
+     <div class="services-grid">
+       <article class="service-card">
+         <div class="icon"><i class="fa-solid fa-microphone-lines"></i></div>
+         <h3>AI Voice Agents</h3>
+         <p>Natural, 24/7 voice agents that qualify leads, handle FAQs, and book appointments.</p>
+         <a class="learn-more" href="#portfolio">Learn More</a>
+       </article>
+       <article class="service-card">
+         <div class="icon"><i class="fa-solid fa-robot"></i></div>
+         <h3>Chatbot Development</h3>
+         <p>Custom omni-channel chatbots for web, WhatsApp, and Instagram with smart flows.</p>
+         <a class="learn-more" href="#portfolio">Learn More</a>
+       </article>
+       <article class="service-card">
+         <div class="icon"><i class="fa-solid fa-diagram-project"></i></div>
+         <h3>Automation Workflows</h3>
+         <p>Automate intake, routing, CRM updates, and notifications across your stack.</p>
+         <a class="learn-more" href="#portfolio">Learn More</a>
+       </article>
+       <article class="service-card">
+         <div class="icon"><i class="fa-solid fa-stethoscope"></i></div>
+         <h3>Healthcare AI</h3>
+         <p>HIPAA-aware assistants for triage, scheduling, and patient communication.</p>
+         <a class="learn-more" href="#portfolio">Learn More</a>
+       </article>
+       <article class="service-card">
+         <div class="icon"><i class="fa-solid fa-house"></i></div>
+         <h3>Real Estate AI</h3>
+         <p>Lead capture, property info, and showing bookings via chat and voice.</p>
+         <a class="learn-more" href="#portfolio">Learn More</a>
+       </article>
+       <article class="service-card">
+         <div class="icon"><i class="fa-solid fa-truck"></i></div>
+         <h3>Logistics Automation</h3>
+         <p>Order status, dispatch coordination, and workflow orchestration at scale.</p>
+         <a class="learn-more" href="#portfolio">Learn More</a>
+       </article>
+       <article class="service-card">
+         <div class="icon"><i class="fa-solid fa-gamepad"></i></div>
+         <h3>Game Development</h3>
+         <p>End-to-end mobile/PC game builds from prototype to launch with live-ops and analytics.</p>
+         <a class="learn-more" href="#portfolio">Learn More</a>
+       </article>
+       <article class="service-card">
+         <div class="icon"><i class="fa-solid fa-film"></i></div>
+         <h3>Video Editing</h3>
+         <p>On-brand edits for ads, reels, and explainers with fast turnarounds and motion graphics.</p>
+         <a class="learn-more" href="#portfolio">Learn More</a>
+       </article>
+       <article class="service-card">
+         <div class="icon"><i class="fa-solid fa-bullhorn"></i></div>
+         <h3>Sales Marketing</h3>
+         <p>Omnichannel funnels—landing pages, email/SMS, paid media, and CRM automations to convert.</p>
+         <a class="learn-more" href="#portfolio">Learn More</a>
+       </article>
+     </div>
+  </section>
+  <!-- Benefits -->
+  <section id="benefits" class="reveal">
+    <div class="section-head">
+      <h2>Benefits</h2>
+      <p>Why teams choose AiViqo for AI automation</p>
+    </div>
+    <div class="benefits-grid">
+      <article class="benefit-card">
+        <div class="icon"><i class="fa-solid fa-bolt"></i></div>
+        <h3>Faster Time‑to‑Value</h3>
+        <p>Stand up pilots in weeks, iterate with data, and scale to production with confidence.</p>
+        <ul class="mini-points"><li>Rapid pilots</li><li>Data‑driven iteration</li><li>Clear milestones</li></ul>
+      </article>
+      <article class="benefit-card">
+        <div class="icon"><i class="fa-solid fa-headset"></i></div>
+        <h3>Better Customer Experience</h3>
+        <p>24/7 voice and chat coverage that reduces wait times and improves resolution rates.</p>
+        <ul class="mini-points"><li>Always‑on agents</li><li>Lower wait times</li><li>Higher CSAT</li></ul>
+      </article>
+      <article class="benefit-card">
+        <div class="icon"><i class="fa-solid fa-gears"></i></div>
+        <h3>Operational Efficiency</h3>
+        <p>Automate repetitive tasks and workflows so your team can focus on higher‑value work.</p>
+        <ul class="mini-points"><li>Reduce manual work</li><li>Less context switching</li><li>Process visibility</li></ul>
+      </article>
+      <article class="benefit-card">
+        <div class="icon"><i class="fa-solid fa-plug"></i></div>
+        <h3>Seamless Integrations</h3>
+        <p>Connect to your CRM, helpdesk, and data tools with reliable, maintainable pipelines.</p>
+        <ul class="mini-points"><li>CRM & helpdesk</li><li>Data pipelines</li><li>Maintainable APIs</li></ul>
+      </article>
+    </div>
+    <div class="benefits-cta">
+      <a href="mailto:info@aiviqo.com" class="btn-primary">Get a tailored plan</a>
+      <a href="#portfolio" class="btn-outline">See real results</a>
+    </div>
+  </section>
+  <!-- Portfolio -->
+   <section id="portfolio" class="reveal">
+     <div class="section-head">
+       <h2>Recent Work</h2>
+       <p>Selected projects that blend AI, automation, and great UX</p>
+     </div>
+     <div class="portfolio-controls">
+       <button class="nav prev" aria-label="Previous"><i class="fa-solid fa-arrow-left"></i></button>
+       <button class="nav next" aria-label="Next"><i class="fa-solid fa-arrow-right"></i></button>
+     </div>
+     <div class="portfolio-grid" data-slide>
+       <a class="portfolio-item" href="#" aria-label="MyZikr">
+         <img src="assets/images/zikrapp.png" alt="MyZikr – AI-Powered Islamic App">
+         <div class="overlay">
+           <h3>MyZikr – AI-Powered Islamic App</h3>
+           <p>Authentic duas, reminders, and a guided spiritual assistant.</p>
+           <span class="cta">View Project</span>
+         </div>
+       </a>
+       <a class="portfolio-item" href="#" aria-label="AiViqo Site">
+         <img src="assets/images/aiviqo.png" alt="AiViqo Website">
+         <div class="overlay">
+           <h3>AiViqo Website</h3>
+           <p>Marketing site with integrated chatbot and demo flow.</p>
+           <span class="cta">View Project</span>
+         </div>
+       </a>
+       <a class="portfolio-item" href="#" aria-label="Healthcare Triage">
+        <img src="assets/images/My.zikr UI app.png" alt="Healthcare AI Triage">
+         <div class="overlay">
+           <h3>Healthcare AI Triage</h3>
+           <p>Symptom intake and scheduling assistant with analytics.</p>
+           <span class="cta">View Project</span>
+         </div>
+       </a>
+       <a class="portfolio-item" href="#" aria-label="Logistics Ops">
+        <img src="assets/images/zikrai.png" alt="Logistics Automation">
+         <div class="overlay">
+           <h3>Logistics Automation</h3>
+           <p>Dispatch coordination and proactive order status updates.</p>
+           <span class="cta">View Project</span>
+         </div>
+       </a>
+       <a class="portfolio-item" href="#" aria-label="Real Estate Concierge">
+        <img src="assets/images/aiviqo.png" alt="Real Estate Concierge">
+         <div class="overlay">
+           <h3>Real Estate Concierge</h3>
+           <p>Property info, lead capture, and viewing bookings.</p>
+           <span class="cta">View Project</span>
+         </div>
+       </a>
+       <a class="portfolio-item" href="#" aria-label="SaaS Automations">
+        <img src="assets/images/zikrapp.png" alt="SaaS Automations">
+         <div class="overlay">
+           <h3>SaaS Automations</h3>
+           <p>CRM sync, approvals, and notifications across tools.</p>
+           <span class="cta">View Project</span>
+         </div>
+       </a>
+     </div>
+   </section>
+   <!-- Team -->
+   <section id="team" class="reveal">
+     <div class="section-head">
+       <h2>Meet Our Experts</h2>
+       <p>Strategists, engineers, and designers focused on outcomes</p>
+     </div>
+     <div class="team-grid">
+       <article class="team-card">
+        <img src="assets/images/profile_1.jpg" alt="Team member" />
+        <div class="team-info">
+          <h3>Adnan Fida</h3>
+          <p>Founder & CEO</p>
+          <p class="bio">Leads strategy and delivery for AI agents and automation programs.</p>
+          <a href="https://www.linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+      </article>
+       <article class="team-card">
+        <img src="assets/images/profile_2.jpg" alt="Team member" />
+        <div class="team-info">
+          <h3>Sarah Khan</h3>
+          <p>Head of Product</p>
+          <p class="bio">Owns UX, research, and high-converting flows from idea to launch.</p>
+          <a href="https://www.linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+      </article>
+       <article class="team-card">
+        <img src="assets/images/profile_3.jpg" alt="Team member" />
+        <div class="team-info">
+          <h3>Bilal Ahmed</h3>
+          <p>Lead Engineer</p>
+          <p class="bio">Architects robust voice/chat systems and integrations at scale.</p>
+          <a href="https://www.linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+      </article>
+       <article class="team-card">
+        <img src="assets/images/profile_1.jpg" alt="Team member" />
+        <div class="team-info">
+          <h3>Ayesha Noor</h3>
+          <p>Automation Architect</p>
+          <p class="bio">Designs workflow automation and data pipelines for operations.</p>
+          <a href="https://www.linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+      </article>
+    </div>
+  </section>
+   <!-- footer  -->
+   <footer id="site-footer" class="reveal">
+    <div class="footer-cta" role="region" aria-label="Stay in touch">
+      <div class="footer-cta-inner">
+        <h3 class="footer-cta-title">Stay updated with AiViqo</h3>
+        <form class="footer-cta-form" id="footer-newsletter" onsubmit="return false" aria-label="Subscribe">
+          <label for="footer-email" class="visually-hidden">Email</label>
+          <input type="email" id="footer-email" name="email" placeholder="Enter your email" required>
+          <button type="submit" class="btn-outline">Submit</button>
+        </form>
+      </div>
+    </div>
+     <div class="footer-top">
+       <div class="brand">
+         <img src="assets/images/AiViqo Logo.svg" alt="AiViqo" />
+         <p>AiViqo builds AI voice agents, chatbots, and automation systems that drive measurable impact.</p>
+       </div>
+       <nav class="footer-nav footer-col" aria-label="Primary">
+         <h4>Company</h4>
+         <ul class="link-list">
+           <li><a href="#">Home</a></li>
+           <li><a href="#services">Services</a></li>
+           <li><a href="#portfolio">Work</a></li>
+           <li><a href="#team">About</a></li>
+         </ul>
+       </nav>
+       <nav class="footer-nav footer-col" aria-label="Services">
+         <h4>Solutions</h4>
+         <ul class="link-list">
+           <li><a href="#services">AI Voice Agents</a></li>
+           <li><a href="#services">Chatbots</a></li>
+           <li><a href="#services">Workflow Automation</a></li>
+           <li><a href="#services">Healthcare & Real Estate</a></li>
+         </ul>
+       </nav>
+       <div class="footer-contact footer-col">
+         <h4>Contact</h4>
+         <a class="footer-email" href="mailto:hello@aiviqo.com">hello@aiviqo.com</a>
+         <div class="socials" aria-label="Social">
+           <a href="https://www.linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+           <a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+           <a href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+         </div>
+       </div>
+     </div>
+     <div class="footer-bottom">
+       <div class="footer-legal">
+         <p>&copy; 2025 AiViqo. All rights reserved.</p>
+         <div class="legal-links">
+           <a href="#">Privacy</a>
+           <span aria-hidden="true">•</span>
+           <a href="#">Terms</a>
+           <span aria-hidden="true">•</span>
+           <a href="#">Cookies</a>
+         </div>
+       </div>
+     </div>
+   </footer>
+   <!-- Chatbot Widget -->
+   <div class="chatbot-widget" id="chatbot-widget">
+       <div class="chat-toggle" id="chat-toggle" onclick="toggleChat()">
+           <img src="assets/images/AiViqo Logo.svg" alt="AiViqo" id="chat-icon" class="chat-logo">
+           <i class="fas fa-times" id="close-icon" style="display: none;"></i>
+       </div>
+       
+       <div class="chat-window" id="chat-window">
+           <div class="chat-header">
+               <div class="header-left">
+                   <img src="assets/images/AiViqo Logo.svg" alt="AiViqo" class="header-logo">
+               </div>
+               <div class="header-right">
+                   <div class="profile-icon" id="profile-icon">
+                       <i class="fas fa-user"></i>
+                   </div>
+                   <div class="back-icon" id="back-icon" style="display: none;">
+                       <i class="fas fa-arrow-left"></i>
+                   </div>
+               </div>
+           </div>
+           
+           <div class="chat-content">
+               <div class="main-prompt" id="main-prompt">
+                   <h2>What can I help with?</h2>
+               </div>
+               
+               <div class="suggested-prompts" id="suggested-prompts">
+                   <button class="suggested-prompt" onclick="selectQuickReply('services')">Our Services</button>
+                   <button class="suggested-prompt" onclick="selectQuickReply('demo')">Book Demo</button>
+                   <button class="suggested-prompt" onclick="selectQuickReply('pricing')">Get Pricing</button>
+                   <button class="suggested-prompt" onclick="selectQuickReply('support')">Support</button>
+               </div>
+               
+               <div class="chat-messages" id="chat-messages">
+                   <!-- Messages will be added here dynamically -->
+               </div>
+               
+        </div>
+        
+        
+    </div>
+
+    <!-- Lead Collection Modal -->
+    <div class="modal" id="lead-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Let's Get Started!</h3>
+                <button class="close-modal" onclick="closeModal('lead-modal')">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <form id="lead-form">
+                <div class="form-group">
+                    <label for="lead-name">Full Name *</label>
+                    <input type="text" id="lead-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="lead-email">Email Address *</label>
+                    <input type="email" id="lead-email" required>
+                </div>
+                <div class="form-group">
+                    <label for="lead-business">Business Type</label>
+                    <select id="lead-business">
+                        <option value="">Select...</option>
+                        <option value="e-commerce">E-commerce</option>
+                        <option value="saas">SaaS</option>
+                        <option value="agency">Agency</option>
+                        <option value="consulting">Consulting</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="lead-service">Service Needed</label>
+                    <select id="lead-service">
+                        <option value="">Select...</option>
+                        <option value="workflow-automation">AI Workflow Automation</option>
+                        <option value="voice-chat-agents">AI Voice & Chat Agents</option>
+                        <option value="whatsapp-instagram">WhatsApp & Instagram Bots</option>
+                        <option value="saas-automation">SaaS Automation</option>
+                        <option value="custom-chatbot">Custom Chatbot</option>
+                        <option value="consultation">General Consultation</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="lead-contact">Preferred Contact Method</label>
+                    <select id="lead-contact">
+                        <option value="email">Email</option>
+                        <option value="phone">Phone</option>
+                        <option value="whatsapp">WhatsApp</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn-primary">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Calendly Booking Modal -->
+    <div class="modal" id="calendly-modal">
+        <div class="modal-content calendly-modal">
+            <div class="modal-header">
+                <h3>Book Your Appointment</h3>
+                <button class="close-modal" onclick="closeModal('calendly-modal')">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="calendly-container">
+                <!-- Calendly inline widget begin -->
+                <div class="calendly-inline-widget" data-url="https://calendly.com/predatorgamer451/30min" style="min-width:320px;height:700px;"></div>
+                <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+                <!-- Calendly inline widget end -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Demo Booking Modal -->
+    <div class="modal" id="demo-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Book Your Demo</h3>
+                <button class="close-modal" onclick="closeModal('demo-modal')">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <form id="demo-form">
+                <div class="form-group">
+                    <label for="demo-name">Full Name *</label>
+                    <input type="text" id="demo-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="demo-email">Email Address *</label>
+                    <input type="email" id="demo-email" required>
+                </div>
+                <div class="form-group">
+                    <label for="demo-company">Company Name *</label>
+                    <input type="text" id="demo-company" required>
+                </div>
+                <div class="form-group">
+                    <label for="demo-service">Service Type *</label>
+                    <select id="demo-service" required>
+                        <option value="">Select a service...</option>
+                        <option value="workflow-automation">AI Workflow Automation</option>
+                        <option value="voice-chat-agents">AI Voice & Chat Agents</option>
+                        <option value="whatsapp-instagram">WhatsApp & Instagram Bots</option>
+                        <option value="saas-automation">SaaS Automation</option>
+                        <option value="custom-chatbot">Custom Chatbot</option>
+                        <option value="other">Other (Custom Service)</option>
+                    </select>
+                </div>
+                <div class="form-group" id="custom-service-group" style="display: none;">
+                    <label for="demo-custom-service">Custom Service Description</label>
+                    <textarea id="demo-custom-service" rows="3" placeholder="Describe your custom service needs..."></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="demo-company-type">Company Type</label>
+                    <select id="demo-company-type">
+                        <option value="">Select company type...</option>
+                        <option value="e-commerce">E-commerce</option>
+                        <option value="saas">SaaS</option>
+                        <option value="agency">Agency</option>
+                        <option value="consulting">Consulting</option>
+                        <option value="startup">Startup</option>
+                        <option value="enterprise">Enterprise</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="demo-description">Short Description</label>
+                    <textarea id="demo-description" rows="3" placeholder="Briefly describe your automation needs or project goals..."></textarea>
+                </div>
+                <button type="submit" class="btn-primary">Submit Demo Request</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-analytics-compat.js"></script>
+    
+    <!-- EmailJS SDK -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    
+    <!-- Firebase Config -->
+    <script src="chatbot/firebase-config.js"></script>
+    
+    <!-- Email Service -->
+    <script src="chatbot/email-service.js"></script>
+    
+    <!-- Chatbot Script - Load after Firebase is initialized -->
+    <script src="chatbot/chatbot.js"></script>
+
+    <!-- Scroll reveal and lightweight slider -->
+    <script>
+      (function() {
+        // Reveal toggle + counters
+        const animateCounts = (root) => {
+          const spans = root.querySelectorAll ? root.querySelectorAll('.count') : [];
+          spans.forEach(span => {
+            if (span.dataset.running === '1') return;
+            const target = Number(span.dataset.target || '0');
+            if (!Number.isFinite(target)) return;
+            const start = 0;
+            const duration = 1200;
+            let startTs = null;
+            span.dataset.running = '1';
+            const step = (ts) => {
+              if (!startTs) startTs = ts;
+              const progress = Math.min(1, (ts - startTs) / duration);
+              const val = Math.floor(start + (target - start) * progress);
+              span.textContent = String(val);
+              if (progress < 1) requestAnimationFrame(step);
+              else span.dataset.running = '2';
+            };
+            requestAnimationFrame(step);
+          });
+        };
+        const resetCounts = (root) => {
+          const spans = root.querySelectorAll ? root.querySelectorAll('.count') : [];
+          spans.forEach(span => { if (span.dataset.running !== '2') { span.textContent = '0'; span.dataset.running = '0'; } });
+        };
+        const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('active');
+              // Stagger animations for direct children to feel professional
+              if (!prefersReduced) {
+                const kids = Array.from(entry.target.children || []);
+                kids.forEach((el, i) => {
+                  // Avoid overriding inline styles used elsewhere
+                  el.style.transitionDelay = `${Math.min(i * 80, 600)}ms`;
+                });
+              }
+              animateCounts(entry.target);
+            } else {
+              entry.target.classList.remove('active');
+              // Reset transition delays
+              const kids = Array.from(entry.target.children || []);
+              kids.forEach((el) => { el.style.transitionDelay = ''; });
+              resetCounts(entry.target);
+            }
+          });
+        }, { threshold: 0.15 });
+        const reveals = Array.from(document.querySelectorAll('.reveal'));
+        reveals.forEach(el => observer.observe(el));
+        // Initial run: activate anything already in view on load
+        const prime = () => {
+          const vh = window.innerHeight || document.documentElement.clientHeight;
+          reveals.forEach(el => {
+            const rect = el.getBoundingClientRect();
+            if (rect.top < vh * 0.85 && rect.bottom > 0) {
+              el.classList.add('active');
+              animateCounts(el);
+            }
+          });
+        };
+        window.addEventListener('load', prime);
+        prime();
+
+        // Step-by-step auto-scroll for Recent Work (like a slider)
+        const grid = document.querySelector('.portfolio-grid');
+        if (grid) {
+          // Ensure snapping is on
+          grid.classList.remove('marquee');
+
+          const getGap = () => {
+            const cs = getComputedStyle(grid);
+            const gap = parseFloat(cs.columnGap || cs.gap || '0');
+            return Number.isFinite(gap) ? gap : 0;
+          };
+          const itemWidth = () => {
+            const first = grid.querySelector('.portfolio-item');
+            return first ? first.clientWidth + getGap() : grid.clientWidth;
+          };
+          const maxScroll = () => Math.max(0, grid.scrollWidth - grid.clientWidth);
+
+          let timer = null;
+          const stepOnce = () => {
+            const nextLeft = grid.scrollLeft + itemWidth();
+            const limit = maxScroll();
+            if (nextLeft >= (limit - 2)) {
+              // snap back to start instantly, then next interval will move forward
+              grid.scrollTo({ left: 0, behavior: 'auto' });
+            } else {
+              grid.scrollBy({ left: itemWidth(), behavior: 'smooth' });
+            }
+          };
+          const start = () => { if (!timer) timer = setInterval(stepOnce, 2200); };
+          const stop = () => { if (timer) { clearInterval(timer); timer = null; } };
+          start();
+          ['mouseenter','focusin','touchstart'].forEach(evt => grid.addEventListener(evt, stop, { passive: true }));
+          ['mouseleave','focusout','touchend'].forEach(evt => grid.addEventListener(evt, start, { passive: true }));
+        }
+
+        // Header scroll behavior
+        const header = document.getElementById('header');
+        const onScroll = () => {
+          if (!header) return;
+          if (window.scrollY > 10) header.classList.add('scrolled');
+          else header.classList.remove('scrolled');
+        };
+        window.addEventListener('scroll', onScroll);
+        onScroll();
+
+        // Portfolio item tilt hover (impressive but lightweight)
+        (function attachTilt(){
+          const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+          if (prefersReduced) return;
+          const cards = document.querySelectorAll('.portfolio-item');
+          const MAX = 8; // deg
+          cards.forEach(card => {
+            card.style.transformStyle = 'preserve-3d';
+            card.addEventListener('mousemove', (e) => {
+              const r = card.getBoundingClientRect();
+              const cx = r.left + r.width/2, cy = r.top + r.height/2;
+              const dx = (e.clientX - cx) / (r.width/2);
+              const dy = (e.clientY - cy) / (r.height/2);
+              const rx = Math.max(-1, Math.min(1, -dy)) * MAX;
+              const ry = Math.max(-1, Math.min(1,  dx)) * MAX;
+              card.style.transform = `rotateX(${rx}deg) rotateY(${ry}deg)`;
+            });
+            card.addEventListener('mouseleave', () => {
+              card.style.transform = '';
+            });
+          });
+        })();
+
+        // Subtle parallax on media blocks
+        (function parallax(){
+          const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+          if (prefersReduced) return;
+          const targets = [
+            document.querySelector('#hero-r'),
+            document.querySelector('#about .about-media img')
+          ].filter(Boolean);
+          const onScrollParallax = () => {
+            const y = window.scrollY || 0;
+            targets.forEach((el, i) => {
+              const strength = (i === 0) ? 0.08 : 0.06;
+              el.style.transform = `translateY(${y * strength}px)`;
+            });
+          };
+          window.addEventListener('scroll', onScrollParallax, { passive: true });
+          onScrollParallax();
+        })();
+
+        // 3D Fall Back Scale & Skew Animation for Hero Text
+        document.addEventListener('DOMContentLoaded', () => {
+          document.body.classList.add('hero-3d');
+          const words = document.querySelectorAll('#hero-1 h1 span');
+          const delays = [0.05, 0.25, 0.45];
+
+          // Set initial state
+          words.forEach((el) => {
+            el.style.opacity = '0';
+            el.style.filter = 'blur(6px)';
+            el.style.transform = 'translateZ(-140px) scale(1.12) skewY(6deg) rotateX(8deg)';
+            el.style.transformOrigin = '50% 60%';
+            el.style.animation = 'none';
+          });
+
+          // Force reflow
+          void document.body.offsetHeight;
+
+          // Apply animation next frame to ensure it runs
+          requestAnimationFrame(() => {
+            words.forEach((el, idx) => {
+              el.style.animation = `heroFallBack 1000ms cubic-bezier(.2,.7,.2,1) ${delays[idx] || 0}s forwards`;
+              el.addEventListener('animationend', () => {
+                // Cleanup inline styles after animation
+                el.style.opacity = '';
+                el.style.filter = '';
+                el.style.transform = '';
+                el.style.transformOrigin = '';
+                el.style.animation = '';
+              }, { once: true });
+            });
+          });
+
+          // Safety: if animation fails, un-blur after 2s
+          setTimeout(() => {
+            words.forEach((el) => {
+              if (getComputedStyle(el).filter !== 'none') {
+                el.style.opacity = '1';
+                el.style.filter = 'none';
+                el.style.transform = 'none';
+                el.style.animation = '';
+              }
+            });
+          }, 2000);
+        });
+      })();
+    </script>
+
+    
+
+    <!-- TTS script removed - voice feature no longer needed -->
+
+    
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/js/all.min.js" integrity="sha512-gBYquPLlR76UWqCwD06/xwal4so02RjIR0oyG1TIhSGwmBTRrIkQbaPehPF8iwuY9jFikDHMGEelt0DtY7jtvQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- Chatbot Script -->
+    <script src="chatbot/chat.js"></script>
+    
+    <!-- Reviews Carousel Script -->
+    <script>
+      let currentIndex = 0;
+      const reviewsContainer = document.getElementById('reviews-container');
+      const reviews = Array.from(document.querySelectorAll('.review-item'));
+      const totalReviews = reviews.length;
+      let isSpeaking = false;
+      let currentUtterance = null;
+      let autoSlideInterval;
+      
+      // Initialize the first review as active
+      if (reviews.length > 0) {
+        reviews[0].classList.add('active');
+      }
+
+      // Calculate the width of each review item
+      function getReviewWidth() {
+        if (reviews.length > 0) {
+          return reviews[0].offsetWidth;
+        }
+        return 0;
+      }
+
+      // Show the current review with fade effect
+      function showCurrentReview() {
+        reviews.forEach((review, index) => {
+          if (index === currentIndex) {
+            review.classList.add('active');
+          } else {
+            review.classList.remove('active');
+          }
+        });
+      }
+
+      // Create dots for navigation
+      function createDots() {
+        const dotsContainer = document.getElementById('carousel-dots');
+        if (!dotsContainer) return;
+        
+        dotsContainer.innerHTML = '';
+        
+        for (let i = 0; i < totalReviews; i++) {
+          const dot = document.createElement('div');
+          dot.classList.add('dot');
+          if (i === currentIndex) dot.classList.add('active');
+          dot.addEventListener('click', () => goToSlide(i));
+          dotsContainer.appendChild(dot);
+        }
+      }
+
+      // Update dots active state
+      function updateDots() {
+        const dots = document.querySelectorAll('.dot');
+        dots.forEach((dot, index) => {
+          if (index === currentIndex) {
+            dot.classList.add('active');
+          } else {
+            dot.classList.remove('active');
+          }
+        });
+      }
+
+      // Go to specific slide
+      function goToSlide(index) {
+        if (index < 0) index = totalReviews - 1;
+        if (index >= totalReviews) index = 0;
+        
+        currentIndex = index;
+        updatePosition();
+        updateDots();
+      }
+
+      // Change to next/previous review
+      function changeReview(direction) {
+        // Hide current review
+        reviews[currentIndex].classList.remove('active');
+        
+        // Calculate new index
+        currentIndex += direction;
+        
+        // Handle wrapping around
+        if (currentIndex >= totalReviews) {
+          currentIndex = 0;
+        } else if (currentIndex < 0) {
+          currentIndex = totalReviews - 1;
+        }
+        
+        // Show new review
+        reviews[currentIndex].classList.add('active');
+        
+        // Update dots
+        updateDots();
+        
+        // Reset auto-slide timer
+        resetAutoSlide();
+      }
+
+      // Auto-slide functionality
+      function startAutoSlide() {
+        stopAutoSlide();
+        autoSlideInterval = setInterval(() => {
+          changeSlide(1);
+        }, 5000);
+      }
+      
+      function stopAutoSlide() {
+        if (autoSlideInterval) {
+          clearInterval(autoSlideInterval);
+        }
+      }
+      
+      function resetAutoSlide() {
+        stopAutoSlide();
+        startAutoSlide();
+      }
+
+      // Initialize the carousel
+      function initCarousel() {
+        createDots();
+        showCurrentReview();
+        startAutoSlide();
+        
+        // Pause auto-slide on hover
+        reviewsContainer.addEventListener('mouseenter', stopAutoSlide);
+        reviewsContainer.addEventListener('mouseleave', startAutoSlide);
+      }
+
+      // Initialize when the page loads
+      document.addEventListener('DOMContentLoaded', function() {
+        // Start with a random review
+        currentIndex = Math.floor(Math.random() * document.querySelectorAll('.review-item').length);
+        initCarousel();
+      });
+
+      // Voice Assistant Functionality
+      function speakReview(name, quote) {
+        if (!('speechSynthesis' in window)) {
+          alert('Speech synthesis is not supported in this browser.');
+          return;
+        }
+
+        // Stop any current speech
+        if (isSpeaking) {
+          window.speechSynthesis.cancel();
+          resetAllVoiceButtons();
+          return;
+        }
+
+        const text = `${name} says: ${quote}`;
+        const utterance = new SpeechSynthesisUtterance(text);
+        
+        // Choose the best voice
+        const voices = window.speechSynthesis.getVoices();
+        const englishVoice = voices.find(voice => 
+          voice.lang.startsWith('en') && voice.name.includes('Female')
+        ) || voices.find(voice => voice.lang.startsWith('en')) || voices[0];
+        
+        if (englishVoice) {
+          utterance.voice = englishVoice;
+        }
+        
+        utterance.rate = 0.9;
+        utterance.pitch = 1;
+        utterance.volume = 0.8;
+        
+        // Find the clicked button and mark it as playing
+        const clickedButton = event.target.closest('.voice-btn');
+        if (clickedButton) {
+          clickedButton.classList.add('playing');
+          clickedButton.innerHTML = '<i class="fas fa-stop"></i>';
+        }
+        
+        utterance.onstart = function() {
+          isSpeaking = true;
+          console.log('Voice started');
+          
+          // Ensure review section stays visible during voice playback
+          const carousel = document.querySelector('#reviews-carousel');
+          const activeReview = document.querySelector('.review-item.active');
+          if (carousel) {
+            carousel.style.display = 'block';
+            carousel.style.visibility = 'visible';
+            carousel.style.opacity = '1';
+          }
+          if (activeReview) {
+            activeReview.style.display = 'block';
+            activeReview.style.visibility = 'visible';
+            activeReview.style.opacity = '1';
+          }
+        };
+        
+        utterance.onend = function() {
+          isSpeaking = false;
+          resetAllVoiceButtons();
+          console.log('Voice ended');
+        };
+        
+        utterance.onerror = function() {
+          isSpeaking = false;
+          resetAllVoiceButtons();
+          console.log('Voice error');
+        };
+        
+        currentUtterance = utterance;
+        window.speechSynthesis.speak(utterance);
+      }
+
+      function resetAllVoiceButtons() {
+        const voiceButtons = document.querySelectorAll('.voice-btn');
+        voiceButtons.forEach(btn => {
+          btn.classList.remove('playing');
+          btn.innerHTML = '<i class="fas fa-volume-up"></i>';
+        });
+      }
+
+      // Disabled auto-rotation of reviews
+      // Show first review by default
+      showReview(0);
+
+      // Initialize voices when they load
+      if (speechSynthesis.onvoiceschanged !== undefined) {
+        speechSynthesis.onvoiceschanged = function() {
+          console.log('Voices loaded');
+        };
+      }
+
+      // Initialize
+      console.log('Initializing carousel...');
+      console.log('Total reviews:', totalReviews);
+      showReview(0);
+      
+      // Force the first review to be visible
+      setTimeout(() => {
+        const firstReview = document.querySelector('.review-item.active');
+        if (firstReview) {
+          firstReview.style.display = 'block';
+          firstReview.style.opacity = '1';
+          firstReview.style.position = 'relative';
+          firstReview.style.visibility = 'visible';
+          console.log('First review made visible');
+        }
+        
+        // Hide all other reviews
+        const allReviews = document.querySelectorAll('.review-item:not(.active)');
+        allReviews.forEach(review => {
+          review.style.display = 'none';
+          review.style.opacity = '0';
+          review.style.visibility = 'hidden';
+        });
+        
+        // Ensure carousel container stays visible
+        const carousel = document.querySelector('#reviews-carousel');
+        if (carousel) {
+          carousel.style.display = 'block';
+          carousel.style.visibility = 'visible';
+          carousel.style.opacity = '1';
+        }
+      }, 100);
+      
+      // Add click handlers for carousel buttons
+      document.addEventListener('DOMContentLoaded', function() {
+        const prevBtn = document.querySelector('.carousel-btn.prev');
+        const nextBtn = document.querySelector('.carousel-btn.next');
+        
+        if (prevBtn) {
+          prevBtn.addEventListener('click', () => {
+            console.log('Previous button clicked');
+            changeReview(-1);
+          });
+          
+          // Prevent hiding on hover
+          prevBtn.addEventListener('mouseenter', () => {
+            const carousel = document.querySelector('#reviews-carousel');
+            const activeReview = document.querySelector('.review-item.active');
+            if (carousel) {
+              carousel.style.display = 'block';
+              carousel.style.visibility = 'visible';
+              carousel.style.opacity = '1';
+            }
+            if (activeReview) {
+              activeReview.style.display = 'block';
+              activeReview.style.visibility = 'visible';
+              activeReview.style.opacity = '1';
+            }
+          });
+        }
+        
+        if (nextBtn) {
+          nextBtn.addEventListener('click', () => {
+            console.log('Next button clicked');
+            changeReview(1);
+          });
+          
+          // Prevent hiding on hover
+          nextBtn.addEventListener('mouseenter', () => {
+            const carousel = document.querySelector('#reviews-carousel');
+            const activeReview = document.querySelector('.review-item.active');
+            if (carousel) {
+              carousel.style.display = 'block';
+              carousel.style.visibility = 'visible';
+              carousel.style.opacity = '1';
+            }
+            if (activeReview) {
+              activeReview.style.display = 'block';
+              activeReview.style.visibility = 'visible';
+              activeReview.style.opacity = '1';
+            }
+          });
+        }
+        
+        // Add hover protection for voice buttons
+        const voiceButtons = document.querySelectorAll('.voice-btn');
+        voiceButtons.forEach(btn => {
+          btn.addEventListener('mouseenter', () => {
+            const carousel = document.querySelector('#reviews-carousel');
+            const activeReview = document.querySelector('.review-item.active');
+            if (carousel) {
+              carousel.style.display = 'block';
+              carousel.style.visibility = 'visible';
+              carousel.style.opacity = '1';
+            }
+            if (activeReview) {
+              activeReview.style.display = 'block';
+              activeReview.style.visibility = 'visible';
+              activeReview.style.opacity = '1';
+            }
+          });
+        });
+      });
+    </script>
+</body>
+</html>
