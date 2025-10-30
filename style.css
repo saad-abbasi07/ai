@@ -2414,12 +2414,14 @@ justify-content: center;
 }
 
 @media (max-width: 767px) {
-    /* Hide mark elements in hero section on mobile */
+    /* Style mark elements in hero section on mobile */
     #hero-1 h1 mark {
-        background: transparent !important;
-        color: inherit !important;
-        box-shadow: none !important;
-        padding: 0 !important;
+        background: #3b82f6 !important;
+        color: white !important;
+        padding: 0.1em 0.4em;
+        border-radius: 4px;
+        display: inline-block;
+        line-height: 1.3;
     }
     
     #hero-section {
@@ -3232,8 +3234,49 @@ justify-content: center;
   text-align: center;
   margin-bottom: 2.2vw;
 }
-#benefits .section-head h2 { font-size: 2.8vw; }
-#benefits .section-head p { font-size: 1.05vw; color: #4b5563; }
+#benefits .section-head h2 { 
+  font-size: 2.8vw; 
+  margin-bottom: 0.5rem;
+}
+
+#benefits .section-head p { 
+  font-size: 1.05vw; 
+  color: #4b5563;
+  line-height: 1.4;
+  margin-top: 0;
+}
+
+/* Mobile styles for benefits section */
+@media (max-width: 767px) {
+  #benefits .section-head h2 {
+    font-size: 1.8rem !important; /* Larger text for mobile */
+    line-height: 1.2;
+    margin-bottom: 0.5rem;
+  }
+  
+  #benefits .section-head p {
+    font-size: 1rem !important; /* Larger text for mobile */
+    line-height: 1.5;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .benefit-card h3 {
+    font-size: 1.3rem !important;
+    margin: 0.8rem 0;
+  }
+  
+  .benefit-card p {
+    font-size: 1rem !important;
+    line-height: 1.5;
+  }
+  
+  .mini-points li {
+    font-size: 0.9rem !important;
+    margin-bottom: 0.4rem;
+  }
+}
 .benefits-grid {
   max-width: 1200px;
   margin: 0 auto;
@@ -3767,7 +3810,11 @@ img {
   mark {
     color: white !important;
     background-color: #3b82f6 !important;
-    padding: 0.2em 0.4em;
+    padding: 0.1em 0.4em !important;
+    border-radius: 4px !important;
+    display: inline-block !important;
+    line-height: 1.3 !important;
+    font-weight: 600 !important;
     border-radius: 0.25em;
   }
   
